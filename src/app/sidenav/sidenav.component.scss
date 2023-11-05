@@ -1,0 +1,28 @@
+@import '../../styles.scss';
+
+.top-bar{
+    width: 100%;
+    // background-color: #555;   
+    overflow: auto;     
+}
+.nav-ico {
+    float: left;
+    text-align: center;
+    transition: all 0.3s ease;
+    color: white;
+    background-color: var(--blue);
+}
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
