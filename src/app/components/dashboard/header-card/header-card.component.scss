@@ -1,0 +1,28 @@
+.custom-card {
+  background-color: var(--white);
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin: 8px;
+}
+
+.custom-card .fa {
+  color: var(--light-gray);
+}
+
+.custom-card:hover,
+.custom-card:focus,
+.custom-card.active
+.custom-card:active {
+  background-color: #506DE2;
+  /* Change to blue when hovered or clicked */
+  color: var(--white);
+  /* Change text color to white */
+}
+
+.custom-card:hover .fa,
+.custom-card:active .fa {
+  color: var(--white);
+  /* Change icon color to white when card is hovered or clicked */
+}
