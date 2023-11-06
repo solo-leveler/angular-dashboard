@@ -1,0 +1,14 @@
+<div class="row p-4">
+    <ng-container *ngIf="headerDetails">
+        <ng-container *ngFor="let item of headerDetails;let index=index">
+            <div class="col-3">
+                <app-header-card [card_data]="item" [card_index]="index"></app-header-card>
+            </div>
+        </ng-container>
+    </ng-container>
+</div>
+<div class="row p-4">
+    <div class="col-8">
+        <app-order-card [card_data]="orderDetails" ></app-order-card>
+    </div>
+</div>
