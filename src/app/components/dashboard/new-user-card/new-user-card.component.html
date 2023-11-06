@@ -17,8 +17,8 @@
                 </div>
             </div>
             <div class="col-5">
-                <div class="progress-bar" [style.width.%]="item.progress">
-                    <div class="indicator" 
+                <div class="progress-bar">
+                    <div class="indicator" [style.width.%]="item.progress"
                         [ngClass]="{'low-progress': item.progress <= 25, 'medium-progress': item.progress > 25 && item.progress <= 75, 'high-progress': item.progress > 75}">
                     </div>
                     <div class="progress-text">{{ item.progress }}%</div>
