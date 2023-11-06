@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <h3>New User Registrations
+        </h3>
+    </div>
+    <ng-container>
+        <div class="row mb-3" *ngFor="let item of card_data">
+            <div class="col-2">
+                <img [src]="item?.picture" alt="user_image" class="rounded-image">
+            </div>
+            <div class="col-3">
+                <div class="row">
+                    {{item?.name}}
+                </div>
+                <div class="row color-gray">
+                    {{item?.country}}
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="progress-bar" [style.width.%]="item.progress">
+                    <div class="indicator" 
+                        [ngClass]="{'low-progress': item.progress <= 25, 'medium-progress': item.progress > 25 && item.progress <= 75, 'high-progress': item.progress > 75}">
+                    </div>
+                    <div class="progress-text">{{ item.progress }}%</div>
+                </div>
+            </div>
+            <div class="col-2">
+
+            </div>
+        </div>
+    </ng-container>
+</div>

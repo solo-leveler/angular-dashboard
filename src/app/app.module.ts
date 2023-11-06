@@ -8,6 +8,7 @@ import { TopnavComponent } from './components/topnav/topnav.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HeaderCardComponent } from './components/dashboard/header-card/header-card.component';
 import { OrderCardComponent } from './components/dashboard/order-card/order-card.component';
+import { NewUserCardComponent } from './components/dashboard/new-user-card/new-user-card.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { OrderCardComponent } from './components/dashboard/order-card/order-card
     TopnavComponent,
     DashboardComponent,
     HeaderCardComponent,
-    OrderCardComponent
+    OrderCardComponent,
+    NewUserCardComponent
   ],
   imports: [
     BrowserModule,
