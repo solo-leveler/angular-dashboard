@@ -1,0 +1,53 @@
+@import '../../../styles.scss';
+
+.nav-ico {
+    transition: all 0.3s ease;
+    color: white;
+    background-color: var(--blue);
+    font-size: 3vh;
+}
+.icon-list {
+    list-style: none;
+    padding: 0;
+}
+.intersection-box {
+    background-color: var(--blue);
+    width: 10vh; /* 10% of viewport height */
+    height: 10vh; /* 10% of viewport height */
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style for the vertical navbar */
+.navbar {
+    width: 10vh; /* 10% of viewport height */
+    height: 100vh;
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style for the horizontal toolbar */
+.toolbar {
+    //background-color: #333;
+    width: 100%; /* Full width of viewport */
+    height: 10vh; /* 10% of viewport height */
+    position: fixed;
+    top: 0;
+    left: 10vh;
+    display: flex !important;
+}
+.content-box{
+    position: relative;
+    top: 15vh;
+    left:15vh;
+    width: calc(100% - 30vh);
+    background-color: var(--light-gray);
+}

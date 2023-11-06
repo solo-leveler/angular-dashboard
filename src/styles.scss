@@ -2,4 +2,15 @@
 :root{
     --gray : #A9ADB6;
     --blue : #506DE2;
+    --light-gray : #f4f7fc;
+}
+.tool-ico {
+    align-items: center;
+    transition: all 0.3s ease;
+    color: var(--gray);
+    font-size: 3vh;
+    padding: 1vh;
+}
+.color-gray{
+    color: var(--gray);
 }
