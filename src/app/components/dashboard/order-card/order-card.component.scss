@@ -1,0 +1,37 @@
+.container{
+    background-color: var(--white);
+    border-radius: 4px;
+    margin: 8px;
+}
+.zebra-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.zebra-table th,
+.zebra-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    /* Divider under each row */
+}
+
+.zebra-table th {
+    font-weight: bold;
+    /* Make column headers bold */
+}
+
+.zebra-table tbody tr:nth-child(even) {
+    background-color: var(--white);
+    /* Zebra stripe background color for even rows */
+}
+.custom-tag {
+    display: inline-block;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
