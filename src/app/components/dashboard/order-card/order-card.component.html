@@ -1,41 +1,43 @@
 <div class="container">
     <div class="row">
-        <h3>Recent Orders
-        </h3>
+        <h4>Recent Orders
+        </h4>
     </div>
-    <table class="zebra-table">
-        <thead>
-            <tr>
-                <th *ngFor="let item of columns">{{item?.name}}</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let obj of card_data;let index=index">
-                <ng-template ngFor let-item [ngForOf]="columns">
-                    <td [ngSwitch]="item.columnDef">
-                        <span *ngSwitchCase="'delivery_date'">
-                            {{obj[item.columnDef] | date}}
-                        </span>
-                        <span *ngSwitchCase="'shipping'"
-                         [innerHTML]="obj[item.columnDef] ? 'Yes' : 'No'" >
-                        </span>
-                        <span *ngSwitchCase="''">
-                            {{index+1}}
-                        </span>
-                        <span *ngSwitchCase="'action'">
-                            <i class="fa-solid fa-xmark"></i>
-                        </span>
-                        <span *ngSwitchCase="'status'">
-                            <div class="custom-tag" [style.background-color]="obj[item.columnDef]=='Failed' ? 'red' : obj[item.columnDef]=='Paid' ? 'green' : 'gray'">
+    <div class="card-container">
+        <table class="zebra-table">
+            <thead>
+                <tr>
+                    <th *ngFor="let item of columns">{{item?.name}}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let obj of card_data;let index=index">
+                    <ng-template ngFor let-item [ngForOf]="columns">
+                        <td [ngSwitch]="item.columnDef">
+                            <span *ngSwitchCase="'delivery_date'">
+                                {{obj[item.columnDef] | date}}
+                            </span>
+                            <span *ngSwitchCase="'shipping'"
+                             [innerHTML]="obj[item.columnDef] ? 'Yes' : 'No'" >
+                            </span>
+                            <span *ngSwitchCase="''">
+                                {{index+1}}
+                            </span>
+                            <span *ngSwitchCase="'action'">
+                                <i class="fa-solid fa-xmark"></i>
+                            </span>
+                            <span *ngSwitchCase="'status'">
+                                <div class="custom-tag" [style.background-color]="obj[item.columnDef]=='Failed' ? 'red' : obj[item.columnDef]=='Paid' ? 'green' : 'gray'">
+                                    {{obj[item.columnDef]}}
+                                </div>
+                            </span>
+                            <span *ngSwitchDefault>
                                 {{obj[item.columnDef]}}
-                            </div>
-                        </span>
-                        <span *ngSwitchDefault>
-                            {{obj[item.columnDef]}}
-                        </span> 
-                    </td>
-                </ng-template>
-            </tr>
-        </tbody>
-    </table>
+                            </span> 
+                        </td>
+                    </ng-template>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
