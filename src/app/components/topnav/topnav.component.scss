@@ -1,24 +1,47 @@
 .toolbar {
     //background-color: #333;
     width: 95%; /* Full width of viewport */
-    height: 10vh; /* 10% of viewport height */
+    height: 8vh; /* 10% of viewport height */
     position: fixed;
     top: 0;
-    left: 10vh;
+    left: 8vh;
+    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
-.has-search .form-control-feedback {
-    position: absolute;
-    z-index: 2;
-    display: block;
-    width: 2.375rem;
-    height: 2.375rem;
-    line-height: 2.375rem;
-    text-align: center;
-    pointer-events: none;
-    color: #aaa;
+.icon-list .tool-ico:hover {
+    color: var(--blue); /* Change the color on hover to your preferred color */
+    /* Add any other hover styles as needed */
 }
-.has-search .form-control {
-    padding-left: 2.375rem;
+.custom-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    width: 300px; /* Adjust the width as needed */
+}
+.search-icon {
+    margin-right: 8px;
+    color: var(--gray);
+}
+
+.custom-text {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    .has-search .form-control-feedback {
+        width: 1.875rem; /* Adjust the width for smaller screens */
+        height: 1.875rem; /* Adjust the height for smaller screens */
+        line-height: 1.875rem; /* Adjust line height for smaller screens */
+    }
+
+    .has-search .form-control {
+        padding-left: 2.5rem; /* Adjust padding for smaller screens */
+    }
 }
