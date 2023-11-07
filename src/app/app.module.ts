@@ -9,6 +9,10 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HeaderCardComponent } from './components/dashboard/header-card/header-card.component';
 import { OrderCardComponent } from './components/dashboard/order-card/order-card.component';
 import { NewUserCardComponent } from './components/dashboard/new-user-card/new-user-card.component';
+import { LineChartCardComponent } from './components/dashboard/line-chart-card/line-chart-card.component';
+import { NgApexchartsModule } from "ng-apexcharts";
+import { ColumnChartCardComponent } from './components/dashboard/column-chart-card/column-chart-card.component';
+import { DonutChartCardComponent } from './components/dashboard/donut-chart-card/donut-chart-card.component';
 
 @NgModule({
   declarations: [
@@ -18,12 +22,16 @@ import { NewUserCardComponent } from './components/dashboard/new-user-card/new-u
     DashboardComponent,
     HeaderCardComponent,
     OrderCardComponent,
-    NewUserCardComponent
+    NewUserCardComponent,
+    LineChartCardComponent,
+    ColumnChartCardComponent,
+    DonutChartCardComponent
   ],
   imports: [
     BrowserModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    NgApexchartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
