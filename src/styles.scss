@@ -1,10 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
-:root{
-    --gray : #A9ADB6;
-    --blue : #506DE2;
-    --light-gray : #f4f7fc;
-    --white : #fff;
+:root {
+    --gray: #A9ADB6;
+    --blue: #506DE2;
+    --light-gray: #f4f7fc;
+    --white: #fff;
+    --green : #09cd10;
 }
+
 .tool-ico {
     align-items: center;
     transition: all 0.3s ease;
@@ -12,12 +14,46 @@
     font-size: 3vh;
     padding: 1vh;
 }
-.color-gray{
+.tool-ico:hover {
+    color: var(--blue); /* Change the color on hover to your preferred color */
+}
+
+.color-gray {
     color: var(--gray);
 }
-.container{
+.color-blue {
+    color: var(--blue);
+}
+
+.rounded-image {
+    border-radius: 50%;
+    display: blockk;
+    /* This makes the image a circle, use a specific value for different levels of roundness */
+  }
+
+.container {
     background-color: var(--white);
     border-radius: 4px;
     margin: 8px;
     padding: 25px;
+}
+
+.card-container {
+    max-height: 300px;
+    scrollbar-width: thin;
+    /* Adjust the maximum height as needed */
+    overflow: auto;
+}
+
+.card-container::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    /* Adjust the width as needed for a thinner scrollbar */
+}
+
+.card-container::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+    /* Adjust the color of the scrollbar thumb */
+    border-radius: 3px;
+    /* Rounded edges for the thumb */
 }
