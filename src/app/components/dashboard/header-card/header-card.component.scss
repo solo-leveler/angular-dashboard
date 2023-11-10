@@ -6,6 +6,9 @@
   padding: 16px;
   margin: 8px;
 }
+.custom-card h2{
+  color : var(--blue)
+}
 
 .custom-card .fa {
   color: var(--light-gray);
@@ -19,6 +22,9 @@
   /* Change to blue when hovered or clicked */
   color: var(--white);
   /* Change text color to white */
+  h2{
+    color : var(--white)
+  }
 }
 
 .custom-card:hover .fa,
