@@ -1,40 +1,94 @@
+.progress-bar {
+  width: 100%;
+  /* Set the width of the progress container */
+  height: 15px;
+  /* Set the height of the progress bar */
+  border-radius: 10px;
+  margin: 20px 0;
+  overflow: hidden;
+  /* Hide overflowing content */
+  position: relative;
+  /* Make it a positioned container */
+}
+
+.indicator {
+  height: 100%;
+  background-color: #4caf50;
+  /* Default color for the filled portion */
+  text-align: right;
+  position: relative;
+  /* Position it relative to the .progress container */
+  transition: width 0.3s ease;
+  /* Add transition for smooth width changes */
+}
+
+.low-progress {
+  background-color: #ff5733 !important;
+  /* Red color for low progress */
+}
+
+.medium-progress {
+  background-color: #fdd835 !important;
+  /* Yellow color for medium progress */
+}
+
+.high-progress {
+  background-color: var(--green) !important;
+  /* Green color for high progress */
+}
+
+.progress-text {
+  color: black;
+  /* Text color for the progress percentage */
+  position: absolute;
+  right: 10px;
+  /* Adjust the distance from the right */
+  top: 50%;
+  transform: translateY(-50%);
+  /* Center vertically */
+}
+
+.dot {
+  position: absolute;
+  bottom: 4px;
+  /* Adjust the bottom distance as needed */
+  right: 4px;
+  /* Adjust the right distance as needed */
+  width: 10px;
+  /* Adjust the size of the dot */
+  height: 10px;
+  border-radius: 50%;
+  /* Makes the dot round */
+}
+.active-dot{
+  background-color: var(--green);
+}
+.inactive-dot{
+  background-color: var(--blue);
+}
+
 .rounded-image {
-    border-radius: 50%; /* This makes the image a circle, use a specific value for different levels of roundness */
-  }
-  .progress-bar {
-    width: 100%; /* Set the width of the progress container */
-    height: 15px; /* Set the height of the progress bar */
-    border-radius: 10px;
-    margin: 20px 0;
-    overflow: hidden; /* Hide overflowing content */
-    position: relative; /* Make it a positioned container */
-  }
-  
-  .indicator {
-    height: 100%;
-    background-color: #4caf50; /* Default color for the filled portion */
-    text-align: right;
-    position: relative; /* Position it relative to the .progress container */
-    transition: width 0.3s ease; /* Add transition for smooth width changes */
-  }
-  
-  .low-progress {
-    background-color: #ff5733 !important; /* Red color for low progress */
-  }
-  
-  .medium-progress {
-    background-color: #fdd835 !important; /* Yellow color for medium progress */
-  }
-  
-  .high-progress {
-    background-color: #4caf50 !important; /* Green color for high progress */
-  }
-  
-  .progress-text {
-    color: black; /* Text color for the progress percentage */
-    position: absolute;
-    right: 10px; /* Adjust the distance from the right */
-    top: 50%;
-    transform: translateY(-50%); /* Center vertically */
-  }
-  
+  border-radius: 50%;
+  display: blockk;
+  /* This makes the image a circle, use a specific value for different levels of roundness */
+}
+
+.image-container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-button {
+  background-color: var(--gray);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Change the button color on hover */
+.custom-button:hover {
+  background-color: var(--blue);
+}
