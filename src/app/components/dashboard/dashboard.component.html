@@ -1,28 +1,28 @@
 <div class="row p-4">
     <ng-container *ngIf="headerDetails">
         <ng-container *ngFor="let item of headerDetails;let index=index">
-            <div class="col-3">
+            <div class="col-sm">
                 <app-header-card [card_data]="item" [card_index]="index"></app-header-card>
             </div>
         </ng-container>
     </ng-container>
 </div>
 <div class="row p-4">
-    <div class="col-8">
+    <div class="col-sm">
         <app-order-card [card_data]="orderDetails" ></app-order-card>
     </div>
-    <div class="col-4">
+    <div class="col-sm">
         <app-new-user-card [card_data]="newUserDetails"></app-new-user-card>
     </div>
 </div>
 <div class="row p-4">
-    <div class="col-4">
+    <div class="col">
         <app-line-chart-card></app-line-chart-card>
     </div>
-    <div class="col-4">
+    <div class="col">
         <app-column-chart-card></app-column-chart-card>
     </div>
-    <div class="col-4">
+    <div class="col">
         <app-donut-chart-card></app-donut-chart-card>
     </div>
 </div>
