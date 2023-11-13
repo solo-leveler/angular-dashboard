@@ -1,27 +1,46 @@
 # IfelseTaskAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.3.
+### About the Project
+---
+Angular Dashboard using Angular 16. 
 
-## Development server
+This project was made for the Technical Round Task of IfElseCloud Pvt. Ltd. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Overview 
+---
+In this project , an attempt to replicate the UI Design from a random Dribble (credits to it's author). 
 
-## Code scaffolding
+https://dribbble.com/shots/6267102-Software-Dashboard/attachments/6267102-Software-Dashboard?mode=media
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Project File Description 
+---
 
-## Build
+#### <img alt="Angular" style="background-color:#33475b" height="18px" src="https://angular.io/assets/images/logos/angular/logo-nav@2x.png">
+All the angular files are in the src folder 
+* _src/app_ : root file of the angular
+* _src/components_ : The main files that runs in UI. These files also include the main logic written for the web-app.
+* _src/config_ : The endpoint file which holds all the enpoints for the project.
+* _models/book-ticket-model.ts_ : A mode file created to maintain the scope of the project.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Local Installation & Setup Instructions :
+----
+This is file structure of my project: 
+```
+├──/src
+|   ├── ...
+|   └── app
+|       ├──
+|       └── ...                
+└──package.json
+```
+`npm i` on the root directory. 
+The project will start at port:8080.  
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Assumptions 
+----
+1. Bootstrap can be used as per the guidelines.It has been only used for its grid system.
+2. For graphs, ApexCharts have been used as per the guidelines. It has not been tampered with much and used only to portray with dummy data.
+3. All color codes have been mentioned in root stylesheet. These color codes have been obtained using color pickers available online. 
+4. Object/Modals have been used as per the guidelines. Although every component have there own modal but there might be cases where common modal have been used.
+5. Fontawesome Icons have used as per the guidelines. The icons might differ from the UI design given as free icons have been only used.
+6. Although the web-app have been best tried to be made responsive. Like everything in this world, it can be still improved.🙂
