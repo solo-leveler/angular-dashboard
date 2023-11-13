@@ -19,7 +19,6 @@
   position: relative;
   /* Position it relative to the .progress container */
   transition: width 0.3s ease;
-  /* Add transition for smooth width changes */
 }
 
 .low-progress {
@@ -51,11 +50,8 @@
 .dot {
   position: absolute;
   bottom: 4px;
-  /* Adjust the bottom distance as needed */
   right: 4px;
-  /* Adjust the right distance as needed */
   width: 10px;
-  /* Adjust the size of the dot */
   height: 10px;
   border-radius: 50%;
   /* Makes the dot round */
